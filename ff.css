@@ -1,0 +1,304 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: 'Popping', 'sans-sarif';
+}
+body {
+  background-color: rgb(201, 214, 243);
+box-sizing: border-box;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Helvetica Neue", sans-serif;
+font-size: 16px;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 0px;
+min-height: 607px
+}  
+
+  /* <<<navbar>>> */
+header {
+  background-color: #c9d1e2;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  }
+  
+  nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  }
+  
+  nav li {
+  margin: 0;
+  }
+  
+  nav a {
+    color: #522d53;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 8.5rem;
+  margin-right: 9px;
+  }
+  
+  nav a:hover, nav a.active {
+  background-color: #fff;
+  color: #0eedf5;
+  }
+  /* <<<< home >>>> */
+  .Home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 5rem;
+  }
+  .image{
+    width: 80vh;
+  }
+  .image img{
+    max-width: 60vh;
+    max-height: 60vh;
+    border-radius: 50%;
+  }
+  .homcon h3{
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  .homcon h1{
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+  span{
+    color: #cc12d3;
+  }
+
+     /* <<<< about >>>> */
+     .About{
+      display: flex;
+      align-content: center;
+      gap: 2rem;
+      position: absolute;
+      top: 6rem;
+    }
+    .abtimg img{
+      max-width: 20vw;
+      border-radius: 50% 0 0 50% ;
+    }
+    .abtcont h2{
+      text-align: left;
+      font-size: 4rem;
+      line-height: 1.2rem;
+    }
+    .abtcont p{
+      font-size: 2rem;
+      margin: 2rem 0 3rem;
+    }
+    .cv{
+      display: inline-block;
+      padding: 1rem 2.8rem;
+      background: #0eedf5;
+      border-radius: 4rem;
+      box-shadow: 0 0 1rem;
+      font-size: 1.6rem;
+      color: #522d53;
+      letter-spacing: .1rem;
+      font-weight: 600;
+      position: absolute;
+      top: 35rem;
+      left: 10rem;
+      transition: .5s;
+    }
+    .cv:hover{
+      color: var(--hover);
+    }
+  /* <<<<department >>>> */
+  .dep{
+    position: absolute;
+ }
+ .dep h3 {
+  margin-left: 4rem;
+ }
+ .dep p{
+   margin:100px;
+   padding: 3px;
+   text-indent: 2rem;
+   margin-left: 15px;
+   margin-top: 30px;
+   font-size: 20px;
+   width: 800px;
+ }
+ .desc a{
+   text-align: center;
+ }
+ 
+ table{
+   width: 50%;
+   height: 40%;
+   margin: 15px;
+   position: absolute;
+   top: 350px;
+ }
+ table th, td{
+   background: blueviolet;
+ }
+ table, th, td{
+   border: 1px solid black;
+   border-collapse: collapse;
+   font-size: .6rem;
+   text-align: center;
+   background-color: #f1f1b3;
+ }
+ table, td{
+   padding: 4px;
+   text-align: center;
+ }
+ .schedule h2{
+   position: absolute;
+   top: 19rem;
+   margin: 15px;
+   font-family: cursive;
+   color: rgb(107, 160, 16);
+ }
+
+    /* <<<< contact >>>> */
+
+    .Contact{
+      /* background: #0ef; */
+      max-width: 600px;
+      /* max-height: -20px; */
+    }
+    .Contact h3{
+      margin-bottom: 3rem;
+      font-size: 3.5rem;
+      text-align: center;
+    } 
+    
+    .Contact p{
+      font-size: 2rem;
+      position: relative;
+      left: 2.6rem;
+    }
+    
+    .touch {
+      font-size: 3rem;
+      position: relative;
+      left: 6rem;
+     
+    }
+    
+    .touch h2 {
+      position: relative;
+      left: 6.5rem;
+    }
+    .send {
+      position: relative;
+      text-align: center;
+      height: 100px;
+      left: 36rem;
+      top: -20rem;
+    }
+    
+    .send p {
+     padding: 1rem;
+     box-sizing: border-box;
+    }
+    .ffo {
+      position: relative;
+      top: 1rem;
+    }
+    .social-media a{
+      display: inline-block;
+      justify-content: center;
+      align-items: center;
+      width: 4rem;
+      height: 4rem;
+      background: transparent;
+      border: .2rem solid #0eedf5;
+      border-radius: 50%;
+      font-size: 3.5rem;
+      color: #522d53;
+      position: relative;
+      top: 3rem;
+      margin: 1rem 2rem;
+      transition: .8s ease;
+    }
+    .social-media a:hover{
+      background: #da0ef5;
+      /* color: var(--hover) */
+      /* color: var(--second-big-color); */
+      color: #cc12d3;
+      box-shadow: 0 0 1rem #0eedf5;
+    }
+
+      /* <<<< registrstion >>>> */
+     
+      .form{
+        justify-content: center;
+        margin-left: 25px;
+        height: 40px;
+        width: 700px;
+      }
+      
+      /* styling the form fields */
+      input[type="text"], input[type="password"], textarea, select {
+        padding: 2px; 
+        margin: 10px;
+        border: none; 
+        border-radius: 5px;
+        font-size: 16px; 
+        width: 300px; 
+        border-spacing: none;
+      }
+      
+      input[type="radio"]{
+        margin: 2px; 
+      }
+      
+      textarea {
+        height: 50px; /* adjust height according to preference */
+      }
+      
+      input[type="submit"]{
+        margin: 10px; 
+        padding: 10px 15px; 
+        border: none; 
+        border-radius: 5px; 
+        background-color: rgb(12, 12, 228);
+        color: white; 
+        font-size: 18px; 
+        cursor: pointer; 
+      }
+      .form h2 {
+        font-size: 28px; 
+        /* text-align: center;  */
+        margin: 10px; 
+        text-decoration: underline; 
+        margin-left: 65px;
+      }
+      
+      /* <<<< links >>> */
+      .link {
+        margin: 25px;
+        padding: 10px;
+      }
+      .link p {
+        text-align: center;
+        font-size: 3rem;
+      }
+     .link a {
+        text-align: center;
+        display: block;
+        padding: 10px;
+        font-size: 1.5rem;
+      }
