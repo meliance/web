@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="ff.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+      <li><a href="Home.html" class="active">Home</a></li>
+      <li><a href="Department.html">Department</a></li>
+      <li><a href="Register.html">Registration</a></li>
+      <li><a href="Links.html">Links</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+      </ul>
+      </nav>
+      </header>
+
+      <script>
+        function validateForm() { 
+        var name = document.forms["registrationForm"]["fullname"].value;
+        var id = document.forms["registrationForm"]["id"].value;
+        var password = document.forms["registrationForm"]["password"].value;
+        var username = document.forms["registrationForm"]["username"].value;
+        var email = document.forms["registrationForm"]["email"].value;
+        var phone = document.forms["registrationForm"]["phone"].value;
+        var birthdate = document.forms["registrationForm"]["birthdate"].value;
+        var gender = document.forms["registrationForm"]["gender"].value;
+        var education = document.forms["registrationForm"]["education"].value;
+        var address = document.forms["registrationForm"]["address"].value;
+        
+        if (name == "") {
+        alert("Full Name must be filled out");
+        return false;
+        }
+        if(id == ""){
+          alert("id number must be filled out");
+          return false;
+        }
+        if (username == "") {
+        alert("Username must be filled out");
+        return false;
+        }
+        if (password == "") {
+        alert("Password must be filled out");
+        return false;
+        }
+        if (email == "") {
+        alert("Email must be filled out");
+        return false;
+        }
+        if (phone ==""){
+          alert("phone number must be filled out");
+          return false;
+        }
+        if (birthdate == "") {
+        alert("Birthdate must be filled out");
+        return false;
+        }
+        if (gender == "") {
+        alert("Gender must be filled out");
+        return false;
+        }
+        if (education == "") {
+        alert("Education Qualification must be filled out");
+        return false;
+        }
+        if (address == "") {
+        alert("Address must be filled out");
+        return false;
+        }
+        return true;
+        }
+        </script>
+        </head>
+        <div class="form">
+        <h2>Registration form</h2>
+        <form action="myphp.php" method="post">
+          <fieldset>
+            <label for="name">First Name:</label>
+            <input type="text" id="Fname" name="Fname"><br>
+            
+             <label for="name">Last Name:</label>
+            <input type="text" id="Lname" name="Lname"><br>
+             <label for="gender">Gender:
+            <input type="radio" id="male" name="gender" value="male"> Male
+            <input type="radio" id="female" name="gender" value="female">Female<br><br>
+             <label for="ID">ID NUMBER:</label>
+            <input type="text" id="id" name="id"><br>
+            
+           <label for="depart">DEPARTMENT:</label>
+                  <input list="depart" id="depart" name="depart" >
+                  <datalist id="depart">
+                      <option value ="SOFTWARE ENGINEERING "></option>
+                      <option value ="COMPUTER SCIENCE"></option>
+                      <option value ="CIVIL ENGINEERING"></option>
+                      <option value ="MECHANICAL ENGINEERING"></option>
+                      <option value ="INFORMATION TECHNOLOGY"></option>
+                      <option value ="BIOMEDICAL ENGINEERING"></option>
+                      <option value ="MATERIAL SCIENCE"></option>
+                      <option value ="ELECTRICAL ENGINEERING"></option>
+                       <option value ="FRESH MAN"></option>
+                      </datalist>
+                      <br><br>               
+                <label>Acadamic Year:
+            <input type="radio" id="1" name="Acadamic Year" value="1"> 1st
+            <input type="radio" id="2" name="Acadamic Year" value="2"> 2nd
+            <input type="radio" id="3" name="Acadamic Year" value="3"> 3rd
+            <input type="radio" id="4" name="Acadamic Year" value="4"> 4th
+            <input type="radio" id="5" name="Acadamic Year" value="5"> 5th
+            </label><br>
+              <label>Semester:
+            1st<input type="radio" id="1" name="semester" value="1"> 
+            2nd<input type="radio" id="2" name="semester" value="2"> 
+             </label><br>    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br>
+            <label for="address">Address:</label>
+            <textarea id="address" name="address"></textarea><br><br>
+            <input type="submit" value="Register">
+            </fieldset>
+          </form>
+        </div>
+</body>
+</html>
